@@ -1,9 +1,5 @@
 'use strict';
 
-const apiKey = "fc9bcfa0f1a145f3bd1ff2e63c249ad1"
-
-const searchURL = 'https://newsapi.org/v2/everything';
-
 function displayResults(responseJson) {
     console.log('displayResults ran');
     $(responseJson).ready(function () {
