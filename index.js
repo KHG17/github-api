@@ -51,17 +51,10 @@ function displayError(error) {
     $('.js-results').removeClass('hidden')
 }
 
-function getSearchPhrase() {
-    return (['Search', 'Find', 'Look up', 'Go', 'Check', 'Push this button', 'Don\'t push this button'])[Math.floor(Math.random() * 7)];
-}
-
 function watchForm() {
     $('#js-form').submit(event => {
         event.preventDefault();
-        console.log('watchForm ran');
-        let searchPhrase = getSearchPhrase()
-        console.log(searchPhrase)
-        $('#find-btn').html(searchPhrase)
+        console.log('watchForm ran'); 
         $('.js-results').empty().addClass('hidden')
         const username = $('.js-username').val();
         console.log(username);
